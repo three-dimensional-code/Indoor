@@ -1,9 +1,6 @@
 apply plugin: 'com.android.application'
 
-compileJava {
-    sourceCompatibility JavaVersion.VERSION_1_7.toString()
-    targetCompatibility JavaVersion.VERSION_1_7.toString()
-}
+
 
 android {
     compileSdkVersion 22
@@ -21,6 +18,10 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+    }
+    compileJava {
+       sourceCompatibility JavaVersion.VERSION_1_7.toString()
+       targetCompatibility JavaVersion.VERSION_1_7.toString()
     }
 }
 
