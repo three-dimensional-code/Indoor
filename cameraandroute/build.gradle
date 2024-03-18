@@ -1,6 +1,4 @@
 apply plugin: 'com.android.application'
-sourceCompatibility JavaVersion.VERSION_1_7.toString()
-targetCompatibility JavaVersion.VERSION_1_7.toString()
 
 android {
     compileSdkVersion 22
