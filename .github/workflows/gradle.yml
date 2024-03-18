@@ -28,8 +28,9 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
     
-    # - name: install android
-    #   run: sdkmanager "platforms;android-22"
+    - uses: android-actions/setup-android@v2
+    - name: install android
+      run: sdkmanager "platforms;android-22"
     - name: Setup Android SDK
       uses: android-actions/setup-android@v3
     # Configure Gradle for optimal use in GiHub Actions, including caching of downloaded dependencies.
