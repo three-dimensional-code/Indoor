@@ -19,7 +19,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    compileJava {
+    compileOptions  {
        sourceCompatibility JavaVersion.VERSION_1_7.toString()
        targetCompatibility JavaVersion.VERSION_1_7.toString()
     }
