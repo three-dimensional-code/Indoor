@@ -31,6 +31,7 @@ jobs:
     - uses: android-actions/setup-android@v2
     - name: install android
       run: sdkmanager "platforms;android-22"
+    - run: sdkmanager tools platform-tools
     - name: Setup Android SDK
       uses: android-actions/setup-android@v3
       with:
