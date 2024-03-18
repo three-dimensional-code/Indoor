@@ -34,8 +34,8 @@ jobs:
     - run: sdkmanager tools platform-tools
     - name: Setup Android SDK
       uses: android-actions/setup-android@v3
-      with:
-        cmdline-tools-version: 8512546
+      # with:
+      #   cmdline-tools-version: 8512546
     # Configure Gradle for optimal use in GiHub Actions, including caching of downloaded dependencies.
     # See: https://github.com/gradle/actions/blob/main/setup-gradle/README.md
     - name: Setup Gradle
